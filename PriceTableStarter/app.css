@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #559fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-transform: uppercase;
+}
+
+.panel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 580px;
+    width: 1200px;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.5);
+
+
+}
+.pricing-plan{
+    padding: 1rem 4rem;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-plan h2{
+    font-size: 16px;
+}
+
+.pricing-img{
+    width: 200px;
+}
+.pricing-header{
+    color: #959495;
+    padding-bottom: 1rem;
+}
+
+.pricing-features{
+    list-style: none;
+    gap: 1rem;
+}
+
+.pricing-features-item{
+    color: #3f9ffd;
+    padding: 1.2rem;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    font-weight: bold;
+
+
+}
+
+.pricing-price{
+    color: #176bf3;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+
+
+
+}
+
+.pricing-button{
+    background-color: white;
+    color: #559fff;
+    padding: 10px 2rem;
+    border-radius: 10px;
+    border: #559fff 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 3600;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.is-featured{
+    background-color: #559fff;
+    color: white;
+    border: white 1px solid;
+}
+
+
+@media (max-width: 575.98px) {
+    body{
+
+
+    }
+
+    .panel{
+        grid-template-columns: 1fr;
+        height: 100%;
+        margin: 3rem;
+    }
+
+    .pricing-plan{
+        border-right: none;
+        border-bottom: 2px solid #e6e6e6;
+        padding: 1rem 2rem;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .panel{
+        grid-template-columns: 1fr;
+        height: 100%;
+        margin: 3rem;
+    }
+
+    .pricing-plan{
+        border-right: none;
+        border-bottom: 2px solid #e6e6e6;
+        padding: 1rem 2rem;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .panel{
+        grid-template-columns: 1fr;
+        height: 100%;
+        margin: 3rem;
+    }
+
+    .pricing-plan{
+        border-right: none;
+        border-bottom: 2px solid #e6e6e6;
+        padding: 1rem 2rem;
+    }
+}
